@@ -1,21 +1,21 @@
-# [携程Apollo](https://github.com/ctripcorp/apollo)的PHP客户端
+# Namor的PHP客户端
 
 ## install
 php version >= 7.0
 ```bash
-$ composer require multilinguals/apollo-client
+$ composer require xpmotors/namor-php-client
 ```
 php version >= 5.4 , <7.0
 ```bash
-$ composer require multilinguals/apollo-client --ignore-platform-reqs
+$ composer require xpmotors/namor-php-client --ignore-platform-reqs
 ```
 
 ## Features
-- 支持apollo配置变更的实时获取
+- 支持namor配置变更的实时获取
 - 支持拉取配置后自定义的回调处理
 
 ## Usage
-客户端以cli的方式后台启动执行，支持apollo配置的适时获取，并将配置保存在指定的目录供应用程序读取解析
+客户端以cli的方式后台启动执行，支持namor配置的适时获取，并将配置保存在指定的目录供应用程序读取解析
 
 ### 客户端示例代码
 ```php
@@ -24,13 +24,13 @@ $ composer require multilinguals/apollo-client --ignore-platform-reqs
 require 'vender/autoload.php'; // autoload
 use Org\Multilinguals\Apollo\Client\ApolloClient;
 
-//specify address of apollo server
+//specify address of namor server
 $server = getenv('CONFIG_SERVER'); // get server address from env
 
-//specify your appid at apollo config server
+//specify your appid at namor config server
 $appid = getenv('APPID'); // get appid from env
 
-//specify namespaces of appid at apollo config server
+//specify namespaces of appid at namor config server
 $namespaces = getenv('NAMESPACE'); // get namespaces from env
 $namespaces = explode(',', $namespaces);
 
