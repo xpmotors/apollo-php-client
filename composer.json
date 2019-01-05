@@ -1,13 +1,13 @@
 {
-  "name": "multilinguals/apollo-client",
-  "description": "apollo client for php",
+  "name": "xpmotors/namor-php-client",
+  "description": "namor client for php",
   "type": "library",
   "license": "MIT",
   "keywords": [
-    "Apollo",
+    "Namor",
     "Client"
   ],
-  "homepage": "https://github.com/multilinguals/apollo-php-client",
+  "homepage": "https://github.com/xpmotors/namor-php-client",
   "require": {
     "php": "~7.0"
   },
