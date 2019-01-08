@@ -4,6 +4,7 @@
   "type": "library",
   "license": "MIT",
   "keywords": [
+    "Xpmotors",
     "Namor",
     "Client"
   ],
@@ -13,7 +14,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Org\\Multilinguals\\Apollo\\Client\\": "src/"
+      "Org\\Xpmotors\\Namor\\Client\\": "src/"
     }
   }
 }

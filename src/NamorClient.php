@@ -1,23 +1,23 @@
 <?php
 
-namespace Org\Multilinguals\Apollo\Client;
+namespace Org\Xpmotors\Namor\Client;
 
-class ApolloClient
+class NamorClient
 {
-    protected $configServer; //apollo服务端地址
-    protected $appId; //apollo配置项目的appid
+    protected $configServer; //namor服务端地址
+    protected $appId; //namor配置项目的appId
     protected $cluster = 'default';
     protected $clientIp = '127.0.0.1'; //绑定IP做灰度发布用
     protected $notifications = [];
     protected $pullTimeout = 10; //获取某个namespace配置的请求超时时间
-    protected $intervalTimeout = 60; //每次请求获取apollo配置变更时的超时时间
+    protected $intervalTimeout = 60; //每次请求获取namor配置变更时的超时时间
     public $save_dir; //配置保存目录
 
     /**
-     * ApolloClient constructor.
-     * @param string $configServer apollo服务端地址
-     * @param string $appId apollo配置项目的appid
-     * @param array $namespaces apollo配置项目的namespace
+     * NamorClient constructor.
+     * @param string $configServer namor服务端地址
+     * @param string $appId namor配置项目的appId
+     * @param array $namespaces namor配置项目的namespace
      */
     public function __construct($configServer, $appId, array $namespaces)
     {
@@ -66,7 +66,7 @@ class ApolloClient
 
     //获取单个namespace的配置文件路径
     public function getConfigFile($namespaceName) {
-        return $this->save_dir.DIRECTORY_SEPARATOR.'apolloConfig.'.$namespaceName.'.php';
+        return $this->save_dir.DIRECTORY_SEPARATOR.'namorConfig.'.$namespaceName.'.php';
     }
 
     //获取单个namespace的配置-无缓存的方式
