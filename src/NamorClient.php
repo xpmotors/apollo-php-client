@@ -165,6 +165,11 @@ class NamorClient
         return $response_list;
     }
 
+    /**
+     * @param $ch
+     * @param null $callback
+     * @throws \Exception
+     */
     protected function _listenChange(&$ch, $callback = null) {
         $base_url = rtrim($this->configServer, '/').'/notifications/v2?';
         $params = [];
