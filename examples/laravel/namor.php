@@ -31,10 +31,10 @@ $callback = function () {
 };
 
 //指定namor的服务地址
-$server = 'http://127.0.0.1:8081';
+$server = 'http://127.0.0.1:8888';
 
 //指定appid
-$appId = 'demo';
+$appId = 'namor-demo';
 
 //指定要拉取哪些namespace的配置
 $namespaces = ['application', 'system'];
